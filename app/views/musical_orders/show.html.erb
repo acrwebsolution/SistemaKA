@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codpedmus:</strong>
+  <%= @musical_order.codpedmus %>
+</p>
+
+<p>
+  <strong>Codcliente:</strong>
+  <%= @musical_order.codcliente %>
+</p>
+
+<p>
+  <strong>Codmusica:</strong>
+  <%= @musical_order.codmusica %>
+</p>
+
+<%= link_to 'Edit', edit_musical_order_path(@musical_order) %> |
+<%= link_to 'Back', musical_orders_path %>

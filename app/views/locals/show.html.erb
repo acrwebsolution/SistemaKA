@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codlocal:</strong>
+  <%= @local.codlocal %>
+</p>
+
+<p>
+  <strong>Distrito:</strong>
+  <%= @local.distrito %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @local.direccion %>
+</p>
+
+<%= link_to 'Edit', edit_local_path(@local) %> |
+<%= link_to 'Back', locals_path %>

@@ -1,0 +1,1 @@
+json.partial! "musical_genres/musical_genre", musical_genre: @musical_genre

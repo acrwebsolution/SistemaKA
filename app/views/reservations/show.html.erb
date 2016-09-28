@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codreserva:</strong>
+  <%= @reservation.codreserva %>
+</p>
+
+<p>
+  <strong>Codcliente:</strong>
+  <%= @reservation.codcliente %>
+</p>
+
+<p>
+  <strong>Codlocal:</strong>
+  <%= @reservation.codlocal %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @reservation.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>

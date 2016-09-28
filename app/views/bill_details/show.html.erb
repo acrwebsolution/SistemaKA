@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nrofactura:</strong>
+  <%= @bill_detail.nrofactura %>
+</p>
+
+<p>
+  <strong>Codpedprod:</strong>
+  <%= @bill_detail.codpedprod %>
+</p>
+
+<p>
+  <strong>Codcliente:</strong>
+  <%= @bill_detail.codcliente %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @bill_detail.precio %>
+</p>
+
+<%= link_to 'Edit', edit_bill_detail_path(@bill_detail) %> |
+<%= link_to 'Back', bill_details_path %>

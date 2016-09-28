@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codmusica:</strong>
+  <%= @music.codmusica %>
+</p>
+
+<p>
+  <strong>Codgenero:</strong>
+  <%= @music.codgenero %>
+</p>
+
+<p>
+  <strong>Codautor:</strong>
+  <%= @music.codautor %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @music.titulo %>
+</p>
+
+<%= link_to 'Edit', edit_music_path(@music) %> |
+<%= link_to 'Back', musics_path %>

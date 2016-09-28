@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codmesa:</strong>
+  <%= @table.codmesa %>
+</p>
+
+<p>
+  <strong>Codlocal:</strong>
+  <%= @table.codlocal %>
+</p>
+
+<p>
+  <strong>Codcliente:</strong>
+  <%= @table.codcliente %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @table.descripcion %>
+</p>
+
+<p>
+  <strong>Capacidad:</strong>
+  <%= @table.capacidad %>
+</p>
+
+<p>
+  <strong>Precioconsumo:</strong>
+  <%= @table.precioconsumo %>
+</p>
+
+<%= link_to 'Edit', edit_table_path(@table) %> |
+<%= link_to 'Back', tables_path %>

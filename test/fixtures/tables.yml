@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codmesa: MyString
+  codlocal: MyString
+  codcliente: MyString
+  descripcion: MyString
+  capacidad: 1
+  precioconsumo: 9.99
+
+two:
+  codmesa: MyString
+  codlocal: MyString
+  codcliente: MyString
+  descripcion: MyString
+  capacidad: 1
+  precioconsumo: 9.99

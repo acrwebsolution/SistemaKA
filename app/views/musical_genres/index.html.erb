@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Musical Genres</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codgenmus</th>
+      <th>Descripcion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @musical_genres.each do |musical_genre| %>
+      <tr>
+        <td><%= musical_genre.codgenmus %></td>
+        <td><%= musical_genre.descripcion %></td>
+        <td><%= link_to 'Show', musical_genre %></td>
+        <td><%= link_to 'Edit', edit_musical_genre_path(musical_genre) %></td>
+        <td><%= link_to 'Destroy', musical_genre, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Musical genre', new_musical_genre_path %>

@@ -1,0 +1,1 @@
+json.array! @musical_orders, partial: 'musical_orders/musical_order', as: :musical_order

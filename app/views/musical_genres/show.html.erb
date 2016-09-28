@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codgenmus:</strong>
+  <%= @musical_genre.codgenmus %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @musical_genre.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_musical_genre_path(@musical_genre) %> |
+<%= link_to 'Back', musical_genres_path %>

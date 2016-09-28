@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Musical Orders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codpedmus</th>
+      <th>Codcliente</th>
+      <th>Codmusica</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @musical_orders.each do |musical_order| %>
+      <tr>
+        <td><%= musical_order.codpedmus %></td>
+        <td><%= musical_order.codcliente %></td>
+        <td><%= musical_order.codmusica %></td>
+        <td><%= link_to 'Show', musical_order %></td>
+        <td><%= link_to 'Edit', edit_musical_order_path(musical_order) %></td>
+        <td><%= link_to 'Destroy', musical_order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Musical order', new_musical_order_path %>

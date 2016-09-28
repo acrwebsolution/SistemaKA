@@ -1,0 +1,41 @@
+<%= form_for(@table) do |f| %>
+  <% if @table.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@table.errors.count, "error") %> prohibited this table from being saved:</h2>
+
+      <ul>
+      <% @table.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codmesa %><br>
+    <%= f.text_field :codmesa %>
+  </div>
+  <div class="field">
+    <%= f.label :codlocal %><br>
+    <%= f.text_field :codlocal %>
+  </div>
+  <div class="field">
+    <%= f.label :codcliente %><br>
+    <%= f.text_field :codcliente %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_field :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :capacidad %><br>
+    <%= f.number_field :capacidad %>
+  </div>
+  <div class="field">
+    <%= f.label :precioconsumo %><br>
+    <%= f.text_field :precioconsumo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module MusicalGenresHelper
+end

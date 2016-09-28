@@ -1,0 +1,1 @@
+json.partial! "musical_orders/musical_order", musical_order: @musical_order

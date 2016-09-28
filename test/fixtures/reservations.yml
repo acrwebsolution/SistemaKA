@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codreserva: MyString
+  codcliente: MyString
+  codlocal: MyString
+  descripcion: MyString
+
+two:
+  codreserva: MyString
+  codcliente: MyString
+  codlocal: MyString
+  descripcion: MyString

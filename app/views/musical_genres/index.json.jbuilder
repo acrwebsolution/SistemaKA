@@ -1,0 +1,1 @@
+json.array! @musical_genres, partial: 'musical_genres/musical_genre', as: :musical_genre

@@ -1,0 +1,29 @@
+<%= form_for(@musical_order) do |f| %>
+  <% if @musical_order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@musical_order.errors.count, "error") %> prohibited this musical_order from being saved:</h2>
+
+      <ul>
+      <% @musical_order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :codpedmus %><br>
+    <%= f.text_field :codpedmus %>
+  </div>
+  <div class="field">
+    <%= f.label :codcliente %><br>
+    <%= f.text_field :codcliente %>
+  </div>
+  <div class="field">
+    <%= f.label :codmusica %><br>
+    <%= f.text_field :codmusica %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

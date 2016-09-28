@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codpedprod: MyString
+  codcliente: MyString
+  codproducto: MyString
+  cantidad: 1
+
+two:
+  codpedprod: MyString
+  codcliente: MyString
+  codproducto: MyString
+  cantidad: 1
